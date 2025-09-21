@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enrique Jarquin — Data Scientist</title>
+  <meta name="description" content="Científico de Datos con base en Criminología y enfoque en Ciberseguridad. Machine Learning, SQL, Power BI, análisis de riesgo y visualización de datos." />
+  <meta name="keywords" content="Ciencia de Datos, Criminología, Ciberseguridad, Machine Learning, SQL, Power BI, Python, Análisis de Riesgos, Visualización de Datos, ETL, QGIS, scikit-learn, Dashboards, KPIs" />
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="Enrique Jarquin — Data Scientist" />
+  <meta property="og:description" content="Analizando el pasado, protegiendo el presente, prediciendo el futuro." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://enrique-jm.github.io/" />
+  <meta property="og:image" content="assets/foto-perfil.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="light-mode">
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Enrique Jarquin</div>
+      <nav class="nav-menu">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">What I Do</a></li>
+          <li><a href="#stack">Tech Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="chip"><i class="fa-solid fa-moon"></i></button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="section reveal">
+      <div class="hero-contact">
+        <div class="hero-profile">
+          <img src="assets/foto-perfil.jpg" alt="Foto de Enrique Jarquin" class="profile-pic" />
+        </div>
+        <div class="hero-text">
+          <h1>Hola, soy <span class="highlight">Enrique Jarquin</span></h1>
+          <p class="slogan">Analizando el pasado, protegiendo el presente, prediciendo el futuro.</p>
+          <p class="subtitle">Ciencia de Datos · Criminología · Ciberseguridad · Machine Learning · Power BI</p>
+          <div class="contact-grid">
+            <div class="chip"><i class="fa-regular fa-envelope"></i> enrique.jmae@gmail.com
+              <button class="copy-btn" onclick="copyText('enrique.jmae@gmail.com')" aria-label="Copiar email"><i class="fa-regular fa-copy"></i></button></div>
+            <div class="chip"><i class="fa-solid fa-phone"></i> +52 55 8445 1260
+              <button class="copy-btn" onclick="copyText('+525584451260')" aria-label="Copiar teléfono"><i class="fa-regular fa-copy"></i></button></div>
+            <a class="chip" href="https://github.com/Enrique-JM" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> github.com/Enrique-JM</a>
+            <a class="chip" href="https://www.linkedin.com/in/enrique-jmae/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/enrique-jmae</a>
+            <a class="chip" href="CV_Enrique.pdf" download><i class="fa-regular fa-file-lines"></i> Descargar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rest of sections same as before -->
+    <section id="about" class="section reveal">
+      <h2>About Me</h2>
+      <p>Soy Científico de Datos con base en Criminología y enfoque en Ciberseguridad. Diseño soluciones de análisis, predicción y visualización para anticipar riesgos, entender patrones de comportamiento y apoyar decisiones estratégicas. Manejo Python (pandas, scikit‑learn), SQL y Power BI; integro flujos ETL y análisis espacial con QGIS.</p>
+    </section>
+
+    <section id="achievements" class="section reveal">
+      <h2>Key Achievements</h2>
+      <ul class="checklist">
+        <li><i class="fa-regular fa-circle-check"></i> Aplicación de ML y análisis criminológico para anticipar riesgos y detectar patrones.</li>
+        <li><i class="fa-regular fa-circle-check"></i> Automatización de reportes con Python y SQL, reduciendo ~80% tiempos de entrega.</li>
+        <li><i class="fa-regular fa-circle-check"></i> Dashboards en Power BI que fortalecen la toma de decisiones tácticas y estratégicas.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Enrique Jarquin</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function copyText(text){ navigator.clipboard.writeText(text).then(()=>alert('Copiado: '+text)); }
+
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click',()=>{
+      document.body.classList.toggle('dark-mode');
+      themeToggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+    });
+  </script>
+</body>
+</html>
