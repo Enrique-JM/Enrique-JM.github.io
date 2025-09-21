@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enrique Jarquin — Data Scientist</title>
+  <meta name="description" content="Científico de Datos con base en Criminología y enfoque en Ciberseguridad. Machine Learning, SQL, Power BI, análisis de riesgo y visualización de datos." />
+  <meta name="keywords" content="Ciencia de Datos, Criminología, Ciberseguridad, Machine Learning, SQL, Power BI, Python, Visualización de Datos, ETL, QGIS, scikit-learn, KPIs" />
+  <meta property="og:title" content="Enrique Jarquin — Data Scientist" />
+  <meta property="og:description" content="Analizando el pasado, protegiendo el presente, prediciendo el futuro." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://enrique-jm.github.io/" />
+  <meta property="og:image" content="assets/foto-perfil.jpg" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body class="light-mode">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Enrique Jarquin</div>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">What I Do</a></li>
+          <li><a href="#stack">Tech Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="chip small-chip" aria-label="Cambiar tema"><i class="fa-solid fa-moon"></i></button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section id="home" class="section reveal">
+      <div class="hero-contact">
+        <div class="hero-profile">
+          <img src="assets/foto-perfil.jpg" alt="Foto de Enrique Jarquin" class="profile-pic" />
+        </div>
+        <div class="hero-text">
+          <h1>Hola, soy <span class="highlight">Enrique Jarquin</span></h1>
+          <p class="slogan">Analizando el pasado, protegiendo el presente, prediciendo el futuro.</p>
+          <p class="subtitle">Ciencia de Datos · Criminología · Ciberseguridad · Machine Learning · Power BI</p>
+        </div>
+      </div>
+
+      <!-- CONTACT centered under hero -->
+      <div id="contact" class="contact-grid center">
+        <div class="chip"><i class="fa-regular fa-envelope"></i> enrique.jmae@gmail.com
+          <button class="copy-btn" onclick="copyText('enrique.jmae@gmail.com')"><i class="fa-regular fa-copy"></i></button></div>
+        <div class="chip"><i class="fa-solid fa-phone"></i> +52 55 8445 1260
+          <button class="copy-btn" onclick="copyText('+525584451260')"><i class="fa-regular fa-copy"></i></button></div>
+        <a class="chip" href="https://github.com/Enrique-JM" target="_blank"><i class="fa-brands fa-github"></i> github.com/Enrique-JM</a>
+        <a class="chip" href="https://www.linkedin.com/in/enrique-jmae/" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/enrique-jmae</a>
+        <a class="chip" href="CV_Enrique.pdf" download><i class="fa-regular fa-file-lines"></i> Descargar CV</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2>About Me</h2>
+      <p>Soy Científico de Datos con base en Criminología y enfoque en Ciberseguridad. Diseño soluciones de análisis, predicción y visualización para anticipar riesgos, entender patrones de comportamiento y apoyar decisiones estratégicas. Manejo Python (pandas, scikit‑learn), SQL y Power BI; integro flujos ETL y análisis espacial con QGIS.</p>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section id="expertise" class="section reveal">
+      <h2>What I Do Best</h2>
+      <div class="grid-3">
+        <div class="card"><h3><i class="fa-solid fa-brain"></i> Predictive Modeling</h3><p>Clasificación, regresión, series de tiempo y scoring de riesgo.</p></div>
+        <div class="card"><h3><i class="fa-solid fa-chart-column"></i> Data Visualization</h3><p>Dashboards ejecutivos, KPIs y storytelling con Power BI y Python.</p></div>
+        <div class="card"><h3><i class="fa-solid fa-database"></i> Data Engineering</h3><p>ETL/ELT, limpieza y validación de datos, automatización de reportes.</p></div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section id="stack" class="section reveal">
+      <h2>Technology Stack</h2>
+      <ul class="tags">
+        <li><i class="fa-brands fa-python"></i> Python</li>
+        <li><i class="fa-solid fa-table"></i> Pandas</li>
+        <li><i class="fa-solid fa-robot"></i> scikit-learn</li>
+        <li><i class="fa-solid fa-chart-pie"></i> Power BI</li>
+        <li><i class="fa-solid fa-database"></i> SQL</li>
+        <li><i class="fa-solid fa-map-location-dot"></i> QGIS</li>
+        <li><i class="fa-solid fa-chart-line"></i> Plotly</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card"><h4><i class="fa-solid fa-users"></i> Telecom Churn Prediction</h4><p>Modelo de ML para predecir deserción, accuracy > 0.75.</p></div>
+        <div class="project-card"><h4><i class="fa-solid fa-film"></i> Film Junky Union</h4><p>Clasificación de reseñas con NLP, F1 > 0.85.</p></div>
+        <div class="project-card"><h4><i class="fa-solid fa-taxi"></i> Sweet Lift Taxis</h4><p>Predicción de demanda por hora, RMSE < 48.</p></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item"><div class="dot"></div><div class="content card"><h4>INE — Técnico en Capacitación Electoral</h4><p>2023–2025 · Liderazgo de equipos, modelos predictivos y mapas digitales.</p></div></div>
+        <div class="timeline-item"><div class="dot"></div><div class="content card"><h4>CNB — Analista de Información</h4><p>2019–2021 · Análisis de datos masivos, dashboards en Power BI, mapas en QGIS.</p></div></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section reveal">
+      <h2>Education & Certifications</h2>
+      <div class="grid-3">
+        <div class="card"><h4>Diplomado en Ciencia de Datos</h4><p>TripleTen · 2024–2025</p></div>
+        <div class="card"><h4>Lic. en Criminología</h4><p>AIFCF · 2012–2015</p></div>
+        <div class="card"><h4>Formación Complementaria</h4><p>Geointeligencia (CentroGeo), INEGI, ENALLT-UNAM.</p></div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section reveal">
+      <h2>Key Achievements</h2>
+      <ul class="checklist">
+        <li><i class="fa-regular fa-circle-check"></i> ML y análisis criminológico para anticipar riesgos y detectar patrones.</li>
+        <li><i class="fa-regular fa-circle-check"></i> Automatización con Python y SQL, reduciendo ~80% los tiempos de reportes.</li>
+        <li><i class="fa-regular fa-circle-check"></i> Dashboards en Power BI que fortalecen la toma de decisiones tácticas y estratégicas.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Enrique Jarquin</footer>
+
+  <script>
+    // Año en footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Copiar texto
+    function copyText(text){ navigator.clipboard.writeText(text).then(()=>alert('Copiado: '+text)); }
+
+    // Toggle tema (inicia claro)
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click',()=>{
+      document.body.classList.toggle('dark-mode');
+      themeToggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+    });
+  </script>
+</body>
+</html>
