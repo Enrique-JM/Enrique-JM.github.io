@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfredo Enrique Jarquin Marcial — Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Alfredo Enrique</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">What I Do</a></li>
+        <li><a href="#stack">Tech Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="highlight">Alfredo Enrique</span></h1>
+      <p class="subtitle">Científico de Datos | Machine Learning | SQL | Power BI</p>
+      <div class="buttons">
+        <a class="btn-primary" href="#projects"><i class="lucide lucide-rocket"></i> Ver Proyectos</a>
+        <a class="btn-secondary" href="CV_Enrique.pdf" download><i class="lucide lucide-file-text"></i> Descargar CV</a>
+        <a class="btn-secondary" href="#contact"><i class="lucide lucide-mail"></i> Contacto</a>
+      </div>
+    </div>
+    <div class="hero-profile">
+      <img src="assets/foto-perfil.jpg" alt="Foto de Alfredo Enrique" class="profile-pic" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Soy un <strong>Científico de Datos</strong> con experiencia en SQL, Python y Power BI...</p>
+  </section>
+
+  <!-- Expertise -->
+  <section id="expertise" class="section">
+    <h2>What I Do Best</h2>
+    <div class="grid-3">
+      <div class="card"><h3><i class="lucide lucide-brain"></i> Predictive Modeling</h3></div>
+      <div class="card"><h3><i class="lucide lucide-bar-chart"></i> Data Visualization</h3></div>
+      <div class="card"><h3><i class="lucide lucide-database"></i> Data Engineering</h3></div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="stack" class="section">
+    <h2>Technology Stack</h2>
+    <ul class="tags">
+      <li><i class="lucide lucide-code"></i> Python</li>
+      <li><i class="lucide lucide-table"></i> Pandas</li>
+      <li><i class="lucide lucide-cpu"></i> Scikit-learn</li>
+      <li><i class="lucide lucide-pie-chart"></i> Power BI</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">Telecom Churn Prediction</div>
+      <div class="project-card">Film Junky Union</div>
+      <div class="project-card">Sweet Lift Taxis</div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="card">Técnico en Capacitación Electoral — INE</div>
+    <div class="card">Analista de Información — CNB</div>
+    <div class="card">Asistente de Investigación</div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <h2>Education & Certifications</h2>
+    <div class="card">Diplomado en Ciencia de Datos</div>
+    <div class="card">Licenciatura en Criminología y Criminalística</div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section">
+    <h2>Key Achievements</h2>
+    <ul>
+      <li>Reducción de tiempos de reportes</li>
+      <li>Modelos de churn con accuracy > 0.75</li>
+      <li>Dashboards en Power BI</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contacto</h2>
+    <div class="contact-grid">
+      <a class="chip" href="mailto:enrique.jmae@gmail.com"><i class="lucide lucide-mail"></i> enrique.jmae@gmail.com</a>
+      <div class="chip"><i class="lucide lucide-phone"></i> +52 5584451260</div>
+      <a class="chip" href="https://github.com/Enrique-JM" target="_blank"><i class="lucide lucide-github"></i> github.com/Enrique-JM</a>
+      <a class="chip" href="https://www.linkedin.com/in/enrique-jmae/" target="_blank"><i class="lucide lucide-linkedin"></i> linkedin.com/in/enrique-jmae</a>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Alfredo Enrique Jarquin Marcial</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
