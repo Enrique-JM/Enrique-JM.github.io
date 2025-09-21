@@ -6,14 +6,18 @@
   <title>Alfredo Enrique Jarquin Marcial — Data Scientist</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 <body>
+  <!-- Navbar fija -->
   <header class="navbar">
     <div class="logo">Alfredo Enrique</div>
     <nav>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#expertise">What I Do</a></li>
         <li><a href="#stack">Tech Stack</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -21,21 +25,74 @@
       </ul>
     </nav>
   </header>
+
+  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-text">
-      <h1><span class="highlight">Data Scientist</span> Who Transforms Data Into Decisions</h1>
-      <p class="subtitle">Experiencia en SQL, Python, Machine Learning y Power BI.</p>
-      <a class="btn-primary" href="CV_Enrique.pdf" download>📄 Descargar CV</a>
+      <h1>Hi, I'm <span class="highlight">Alfredo Enrique</span></h1>
+      <p class="subtitle">Científico de Datos | Machine Learning | SQL | Power BI</p>
+      <div class="buttons">
+        <a class="btn-primary" href="#projects">🚀 Ver Proyectos</a>
+        <a class="btn-secondary" href="CV_Enrique.pdf" download>📄 Descargar CV</a>
+        <a class="btn-secondary" href="#contact">📬 Contacto</a>
+      </div>
     </div>
     <div class="hero-profile">
       <img src="assets/foto-perfil.jpg" alt="Foto de Alfredo Enrique" class="profile-pic">
-      <h3>Data Scientist</h3>
-      <p><a href="mailto:enrique.jmae@gmail.com">enrique.jmae@gmail.com</a></p>
-      <p>📱 +52 5584451260</p>
-      <p><a href="https://www.linkedin.com/in/enrique-jmae/" target="_blank">LinkedIn</a> | <a href="https://github.com/Enrique-JM" target="_blank">GitHub</a></p>
     </div>
   </section>
-  <footer>© <span id="year"></span> Alfredo Enrique Jarquin Marcial</footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <!-- Expertise Section -->
+  <section id="expertise" class="section">
+    <h2>What I Do Best</h2>
+    <div class="grid-3">
+      <div class="card"><h3>Predictive Modeling</h3><p>Series de tiempo, regresión, clasificación y modelos de churn.</p></div>
+      <div class="card"><h3>Data Visualization</h3><p>Dashboards ejecutivos con Power BI, matplotlib y plotly.</p></div>
+      <div class="card"><h3>Data Engineering</h3><p>ETL, SQL avanzado, scraping y automatización de reportes.</p></div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="stack" class="section">
+    <h2>Technology Stack</h2>
+    <ul class="tags">
+      <li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>Power BI</li><li>SQL</li><li>Plotly</li><li>RPA</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card"><h4>Telecom Churn Prediction</h4><p>Modelo de ML para recomendar planes, accuracy > 0.75.</p></div>
+      <div class="project-card"><h4>Film Junky Union</h4><p>Clasificador de reseñas negativas con F1 > 0.85 usando NLP.</p></div>
+      <div class="project-card"><h4>Sweet Lift Taxis</h4><p>Modelo de forecasting para demanda de taxis, RMSE < 48.</p></div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="card"><h4>Técnico en Capacitación Electoral — INE</h4><p>2023-2025 · Lideré equipos, diseñé mapas digitales y apliqué modelos predictivos para optimizar recursos.</p></div>
+    <div class="card"><h4>Analista de Información — CNB</h4><p>2019-2021 · Análisis de datos masivos, creación de dashboards en Power BI y mapas en QGIS.</p></div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contacto</h2>
+    <p>📧 <a href="mailto:enrique.jmae@gmail.com">enrique.jmae@gmail.com</a></p>
+    <p>📱 +52 5584451260</p>
+    <p>🔗 <a href="https://github.com/Enrique-JM" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/enrique-jmae/" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Alfredo Enrique Jarquin Marcial · Built with HTML & CSS
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
+</html>
+
 </html>
