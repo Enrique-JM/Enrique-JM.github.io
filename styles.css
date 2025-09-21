@@ -1,0 +1,97 @@
+/* styles.css — Compact + Scrollspy: fondo blanco, bordes finos y layout compacto */
+@import url('https://unpkg.com/lucide-static/font/lucide.css');
+
+:root{
+  --bg:#ffffff;
+  --text:#0f172a;
+  --muted:#475569;
+  --border:#eef1f5;
+  --accent:#2563eb;
+  --accent-2:#22d3ee;
+  --shadow:0 4px 14px rgba(15,23,42,.05);
+}
+
+html{scroll-behavior:smooth}
+body{margin:0; background:var(--bg); color:var(--text); font-family:'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; font-weight:400}
+
+/* Contenedor */
+.container{max-width:1080px; margin:0 auto; padding:0 20px}
+
+/* Navbar compacta con scrollspy */
+.navbar{position:sticky; top:0; z-index:100; background:#fff; border-bottom:1px solid var(--border)}
+.navbar .container{display:flex; justify-content:space-between; align-items:center; gap:12px; padding:10px 20px}
+.logo{font-size:1rem}
+.nav-links{display:flex; gap:14px; list-style:none; margin:0; padding:0}
+.nav-links a{color:var(--muted); text-decoration:none; font-weight:600; padding:8px 6px; border-radius:8px; transition:background .18s, color .18s}
+.nav-links a:hover{color:var(--text); background:#f8fafc}
+.nav-links a.active{color:#0b1b3a; background:#eef6ff; outline:1px solid #dbeafe}
+
+/* Espacio correcto al anclar (navbar sticky) */
+.section{scroll-margin-top:72px}
+
+/* Secciones enmarcadas — compacto */
+.section{
+  background:#fff; border:1px solid var(--border); border-radius:10px;
+  padding:20px; margin:14px 0; box-shadow:var(--shadow);
+  opacity:0; transform:translateY(6px); transition:opacity .45s, transform .45s;
+}
+.section.show{opacity:1; transform:none}
+.section h2{margin:0 0 8px; font-size:1.45rem; text-align:left; font-weight:700}
+.section p{color:var(--muted); margin:8px 0 0}
+
+/* Hero más compacto */
+.hero{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:18px}
+.hero.compact{padding:0}
+.hero-text{flex:1 1 520px}
+.hero-text h1{font-size:2.1rem; line-height:1.1; margin:0 0 6px; font-weight:800}
+.subtitle{color:var(--muted); margin:0 0 12px; font-size:.98rem}
+.buttons{display:flex; flex-wrap:wrap; gap:8px}
+.btn-primary,.btn-secondary{display:inline-flex; align-items:center; gap:6px; text-decoration:none; font-weight:700; padding:10px 14px; border-radius:10px; transition:transform .18s, box-shadow .18s}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#fff; box-shadow:var(--shadow)}
+.btn-primary:hover{transform:translateY(-1px)}
+.btn-secondary{background:#fff; color:var(--accent); border:1px solid var(--accent)}
+.btn-secondary:hover{transform:translateY(-1px); background:#f0f7ff}
+
+/* Foto compacta */
+.hero-profile{flex:1 1 280px; display:flex; justify-content:center}
+.profile-pic{width:220px; height:220px; border-radius:50%; object-fit:cover; border:6px solid #fff; box-shadow:0 6px 20px rgba(2,6,23,.07); transition:transform .25s}
+.profile-pic:hover{transform:scale(1.02)}
+
+/* Grids y tarjetas compactas */
+.grid-3{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px}
+.compact-grid{gap:12px}
+.card,.project-card{background:#fff; border:1px solid var(--border); border-radius:10px; padding:14px; box-shadow:var(--shadow); transition:transform .18s, box-shadow .18s}
+.compact-card{padding:12px}
+.card:hover,.project-card:hover{transform:translateY(-1px); box-shadow:0 8px 20px rgba(15,23,42,.08)}
+.card h3{margin:0 0 6px; font-size:1rem}
+
+/* Tags con iconos — compactos */
+.tags{display:flex; flex-wrap:wrap; gap:6px; list-style:none; padding:0; justify-content:center}
+.compact-tags{gap:6px}
+.tags li{background:#eef6ff; color:#1e40af; border:1px solid #dbeafe; padding:5px 9px; border-radius:999px; font-weight:700; font-size:.88rem; display:inline-flex; align-items:center; gap:6px}
+.tags li i{font-size:16px}
+
+/* Projects grid */
+.projects-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px}
+.project-card h4{margin:0 0 6px}
+
+/* Timeline compacta */
+.timeline{position:relative; margin-left:6px}
+.timeline::before{content:""; position:absolute; left:10px; top:0; bottom:0; width:2px; background:#e2e8f0}
+.timeline-item{position:relative; padding-left:26px; margin:10px 0}
+.timeline-item .dot{position:absolute; left:4px; top:8px; width:10px; height:10px; background:var(--accent); border-radius:50%; box-shadow:0 0 0 3px #e0f2fe}
+.timeline .content h4{margin:0 0 4px}
+
+/* Checklist compacta */
+.checklist{list-style:none; padding:0; margin:0; display:grid; gap:6px}
+.checklist li{display:flex; align-items:flex-start; gap:6px; font-size:.98rem}
+.checklist i{color:#16a34a}
+
+/* Contact chips compactos */
+.contact .contact-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:8px; margin-top:6px}
+.chip{display:flex; align-items:center; gap:8px; padding:10px 12px; border-radius:10px; background:#fff; border:1px solid var(--border); color:var(--text); text-decoration:none; box-shadow:var(--shadow); transition:transform .18s, box-shadow .18s}
+.chip:hover{transform:translateY(-1px); box-shadow:0 10px 24px rgba(15,23,42,.08)}
+.chip i{color:var(--accent)}
+
+/* Footer minimal */
+.footer{border-top:1px solid var(--border); color:var(--muted); text-align:center; padding:12px 0; margin:14px 0 0}
