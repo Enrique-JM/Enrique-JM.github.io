@@ -1,0 +1,28 @@
+/* styles.css — versión PRO con colores ajustados y animaciones */
+/* Manteniendo paleta actual, solo se ajusta tamaño de foto */
+
+:root {
+  --bg: #0a0f1e;
+  --bg2: #0e1630;
+  --card: #0f172a;
+  --text: #e6eef8;
+  --muted: #9fb0cc;
+  --accent: #7c3aed;     /* Morado vibrante */
+  --accent-2: #22d3ee;   /* Cian */
+  --ring: rgba(124,58,237,.35);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(1200px 800px at 10% -20%, var(--accent-2) 0%, transparent 40%),
+              radial-gradient(1200px 800px at 110% 10%, var(--accent) 0%, transparent 35%),
+              linear-gradient(180deg,var(--bg),var(--bg2));
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+/* Hero-profile and bigger photo */
+.hero-profile { flex:1 1 30%; text-align:center; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:1.5rem; box-shadow:0 10px 30px rgba(2,6,23,.35); max-width:350px; animation:slideIn 1s ease-out; }
+.profile-pic { width:220px; height:220px; border-radius:50%; object-fit:cover; margin-bottom:1rem; border:4px solid #334155; transition:transform .3s; }
+.profile-pic:hover { transform:scale(1.05); }
