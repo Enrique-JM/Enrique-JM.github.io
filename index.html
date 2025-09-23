@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enrique Jarquin — Data Scientist</title>
+  <meta name="description" content="Científico de Datos con base en Criminología y enfoque en ciberseguridad, análisis territorial y social. Portafolio bilingüe ES/EN." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body class="light-mode">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Enrique Jarquin</div>
+      <nav class="nav-menu">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home"><span data-lang="es">Inicio</span><span data-lang="en">Home</span></a></li>
+          <li><a href="#about"><span data-lang="es">Sobre mí</span><span data-lang="en">About</span></a></li>
+          <li><a href="#expertise"><span data-lang="es">Qué hago</span><span data-lang="en">What I Do</span></a></li>
+          <li><a href="#stack"><span data-lang="es">Stack</span><span data-lang="en">Tech Stack</span></a></li>
+          <li><a href="#projects"><span data-lang="es">Proyectos</span><span data-lang="en">Projects</span></a></li>
+          <li><a href="#experience"><span data-lang="es">Experiencia</span><span data-lang="en">Experience</span></a></li>
+          <li><a href="#education"><span data-lang="es">Educación</span><span data-lang="en">Education</span></a></li>
+          <li><a href="#achievements"><span data-lang="es">Logros</span><span data-lang="en">Achievements</span></a></li>
+          <li><a href="#contact"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></a></li>
+        </ul>
+      </nav>
+      <div class="btns">
+        <button id="langToggle" class="chip small-chip">🌐 English</button>
+        <button id="themeToggle" class="chip small-chip" aria-label="Cambiar tema"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section id="home" class="section reveal">
+      <div class="hero">
+        <!-- LEFT: Photo + Contact -->
+        <div class="hero-left">
+          <div class="profile-card">
+            <img src="assets/foto-perfil.jpg" alt="Foto de Enrique Jarquin" class="profile-pic" />
+            <!-- CONTACT inside the profile card -->
+            <div id="contact" class="contact-grid center">
+              <div class="chip"><i class="fa-regular fa-envelope"></i> enrique.jmae@gmail.com
+                <button class="copy-btn" onclick="copyText('enrique.jmae@gmail.com')" aria-label="Copiar email"><i class="fa-regular fa-copy"></i></button>
+              </div>
+              <div class="chip"><i class="fa-solid fa-phone"></i> +52 55 8445 1260
+                <button class="copy-btn" onclick="copyText('+525584451260')" aria-label="Copiar teléfono"><i class="fa-regular fa-copy"></i></button>
+              </div>
+              <a class="chip" href="https://github.com/Enrique-JM" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> github.com/Enrique-JM</a>
+              <a class="chip" href="https://www.linkedin.com/in/enrique-jmae/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/enrique-jmae</a>
+              <a class="chip" href="CV_Enrique.pdf" download><i class="fa-regular fa-file-lines"></i> <span data-lang="es">Descargar CV</span><span data-lang="en">Download CV</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Headline + Keywords + Tagline (moved here, under keywords) -->
+        <div class="hero-right hero-text">
+          <h1 class="static-headline">
+            <span data-lang="es">Conecto la analítica avanzada con problemáticas reales</span>
+            <span data-lang="en">I connect advanced analytics with real-world challenges</span>
+          </h1>
+          <h2 class="name" data-lang="es">Enrique Jarquin</h2>
+          <h2 class="name" data-lang="en">Enrique Jarquin</h2>
+          <p class="subtitle keywordsline" data-lang="es">Ciencia de Datos · Criminología · Ciberseguridad · Machine Learning · Power BI</p>
+          <p class="subtitle keywordsline" data-lang="en">Data Science · Criminology · Cybersecurity · Machine Learning · Power BI</p>
+
+          <!-- Tagline block directly under keywords -->
+          <div class="tagline">
+            <h2 data-lang="es">Científico de Datos con Impacto Social y Territorial</h2>
+            <h2 data-lang="en">Data Scientist with Social & Territorial Impact</h2>
+            <p data-lang="es">Conecto la analítica avanzada con problemáticas reales: desde optimización de rutas electorales hasta análisis de violencia de género y predicción de demanda.</p>
+            <p data-lang="en">I connect advanced analytics with real-world challenges: from optimizing electoral routes to analyzing gender-based violence and forecasting demand.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2 data-lang="es">Sobre mí</h2>
+      <h2 data-lang="en">About Me</h2>
+      <p data-lang="es">Formado en Criminología y especializado en Ciencia de Datos, combino la comprensión de fenómenos sociales y de seguridad con técnicas avanzadas de analítica. Esta perspectiva me permite abordar proyectos más allá de lo técnico, considerando el impacto humano, institucional y estratégico.</p>
+      <p data-lang="en">With a background in Criminology and specialization in Data Science, I merge the understanding of social and security phenomena with advanced analytics. This lets me go beyond the technical layer, focusing on human, institutional, and strategic impact.</p>
+      <p class="about-slogan" data-lang="es">Analizando el pasado, protegiendo el presente, prediciendo el futuro.</p>
+      <p class="about-slogan" data-lang="en">Analyzing the past, protecting the present, predicting the future.</p>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section id="expertise" class="section reveal">
+      <h2 data-lang="es">Qué hago</h2>
+      <h2 data-lang="en">What I Do</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3><i class="fa-solid fa-brain"></i> <span data-lang="es">Modelado Predictivo</span><span data-lang="en">Predictive Modeling</span></h3>
+          <p data-lang="es">Clasificación, regresión, series de tiempo y scoring de riesgo.</p>
+          <p data-lang="en">Classification, regression, time series, and risk scoring.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa-solid fa-chart-column"></i> <span data-lang="es">Visualización</span><span data-lang="en">Visualization</span></h3>
+          <p data-lang="es">Dashboards ejecutivos, KPIs y storytelling con Power BI y Python.</p>
+          <p data-lang="en">Executive dashboards, KPIs, and storytelling with Power BI and Python.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa-solid fa-database"></i> <span data-lang="es">Ingeniería de Datos</span><span data-lang="en">Data Engineering</span></h3>
+          <p data-lang="es">ETL/ELT, limpieza, validación y automatización de reportes.</p>
+          <p data-lang="en">ETL/ELT, cleaning, validation, and automated reporting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section id="stack" class="section reveal">
+      <h2 data-lang="es">Tecnologías</h2>
+      <h2 data-lang="en">Technology Stack</h2>
+      <ul class="tags">
+        <li><i class="fa-brands fa-python"></i> Python</li>
+        <li><i class="fa-solid fa-table"></i> Pandas</li>
+        <li><i class="fa-solid fa-robot"></i> scikit-learn</li>
+        <li><i class="fa-solid fa-chart-pie"></i> Power BI</li>
+        <li><i class="fa-solid fa-database"></i> SQL</li>
+        <li><i class="fa-solid fa-map-location-dot"></i> QGIS</li>
+        <li><i class="fa-solid fa-chart-line"></i> Plotly</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2 data-lang="es">Proyectos Destacados</h2>
+      <h2 data-lang="en">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h4><i class="fa-solid fa-users"></i> Telecom Churn Prediction</h4>
+          <p data-lang="es">Modelo de machine learning para predecir deserción de clientes en telecomunicaciones, con ingeniería de características y validación cruzada. <strong>Accuracy &gt; 0.75</strong>.</p>
+          <p data-lang="en">Machine learning model to predict telecom customer churn with feature engineering and cross-validation. <strong>Accuracy &gt; 0.75</strong>.</p>
+        </div>
+        <div class="project-card">
+          <h4><i class="fa-solid fa-film"></i> Film Junky Union (NLP)</h4>
+          <p data-lang="es">Clasificación de reseñas con procesamiento de lenguaje natural (tokenización, TF-IDF, modelos lineales). <strong>F1 &gt; 0.85</strong>.</p>
+          <p data-lang="en">Review classification with NLP (tokenization, TF-IDF, linear models). <strong>F1 &gt; 0.85</strong>.</p>
+        </div>
+        <div class="project-card">
+          <h4><i class="fa-solid fa-taxi"></i> Sweet Lift Taxis</h4>
+          <p data-lang="es">Predicción de demanda por hora usando series de tiempo y señales exógenas. <strong>RMSE &lt; 48</strong>.</p>
+          <p data-lang="en">Hourly demand forecasting using time series and exogenous signals. <strong>RMSE &lt; 48</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal">
+      <h2 data-lang="es">Experiencia</h2>
+      <h2 data-lang="en">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="dot"><i class="fa-solid fa-person-booth"></i></div>
+          <div class="content card">
+            <h4 data-lang="es">INE — Técnico en Capacitación Electoral</h4>
+            <h4 data-lang="en">INE — Electoral Training Technician</h4>
+            <p class="dates">2023–2025</p>
+            <ul class="bullets">
+              <li data-lang="es">Planeación y coordinación de la capacitación electoral; supervisión de equipos en campo.</li>
+              <li data-lang="en">Planned and coordinated electoral training; supervised field teams.</li>
+              <li data-lang="es">Desarrollo de mapas digitales y rutas de cobertura con QGIS.</li>
+              <li data-lang="en">Developed digital maps and coverage routes using QGIS.</li>
+              <li data-lang="es">Apoyo analítico con modelos y tableros para monitorear avances y riesgos.</li>
+              <li data-lang="en">Analytical support with models and dashboards to monitor progress and risk.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"><i class="fa-solid fa-flask"></i></div>
+          <div class="content card">
+            <h4 data-lang="es">Asistente de Investigación</h4>
+            <h4 data-lang="en">Research Assistant</h4>
+            <p class="dates">2021–2022</p>
+            <ul class="bullets">
+              <li data-lang="es">Recopilación, limpieza y análisis estadístico de datos en proyectos de criminología aplicada.</li>
+              <li data-lang="en">Data collection, cleaning, and statistical analysis in applied criminology projects.</li>
+              <li data-lang="es">Apoyo en revisión de literatura, elaboración de informes y visualizaciones.</li>
+              <li data-lang="en">Supported literature review, report writing, and visualizations.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"><i class="fa-solid fa-database"></i></div>
+          <div class="content card">
+            <h4 data-lang="es">CNB — Analista de Información</h4>
+            <h4 data-lang="en">CNB — Information Analyst</h4>
+            <p class="dates">2019–2021</p>
+            <ul class="bullets">
+              <li data-lang="es">Integración y depuración de bases de datos; creación de tableros en Power BI.</li>
+              <li data-lang="en">Integrated and cleaned databases; built dashboards in Power BI.</li>
+              <li data-lang="es">Elaboración de reportes ejecutivos y análisis geoespacial en QGIS.</li>
+              <li data-lang="en">Prepared executive reports and performed geospatial analysis in QGIS.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section reveal">
+      <h2 data-lang="es">Educación & Certificaciones</h2>
+      <h2 data-lang="en">Education & Certifications</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h4>Diplomado en Ciencia de Datos · Data Science Diploma</h4>
+          <p data-lang="es">TripleTen · 2024–2025</p>
+          <p data-lang="en">TripleTen · 2024–2025</p>
+        </div>
+        <div class="card">
+          <h4>Licenciatura en Criminología · B.A. in Criminology</h4>
+          <p data-lang="es">AIFCF · 2012–2015</p>
+          <p data-lang="en">AIFCF · 2012–2015</p>
+        </div>
+        <div class="card">
+          <h4><span data-lang="es">Formación Complementaria</span><span data-lang="en">Complementary Training</span></h4>
+          <p data-lang="es">Geointeligencia (CentroGeo), INEGI, ENALLT-UNAM.</p>
+          <p data-lang="en">Geo-intelligence (CentroGeo), INEGI, ENALLT-UNAM.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section reveal">
+      <h2 data-lang="es">Logros</h2>
+      <h2 data-lang="en">Key Achievements</h2>
+      <ul class="checklist">
+        <li>
+          <i class="fa-regular fa-circle-check"></i>
+          <span data-lang="es">ML y análisis criminológico para anticipar riesgos y detectar patrones.</span>
+          <span data-lang="en">ML and criminological analysis to anticipate risks and detect patterns.</span>
+        </li>
+        <li>
+          <i class="fa-regular fa-circle-check"></i>
+          <span data-lang="es">Automatización con Python y SQL, reduciendo ~80% los tiempos de reportes.</span>
+          <span data-lang="en">Automation with Python and SQL, cutting reporting time by ~80%.</span>
+        </li>
+        <li>
+          <i class="fa-regular fa-circle-check"></i>
+          <span data-lang="es">Dashboards en Power BI que fortalecen decisiones tácticas y estratégicas.</span>
+          <span data-lang="en">Power BI dashboards that strengthen tactical and strategic decisions.</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Enrique Jarquin</footer>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Copy helper
+    function copyText(text){ navigator.clipboard.writeText(text).then(()=>alert('Copiado: '+text)); }
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', ()=>{
+      document.body.classList.toggle('dark-mode');
+      themeToggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+    });
+
+    // Language toggle + visibility control
+    const langToggle = document.getElementById('langToggle');
+    let currentLang = localStorage.getItem('lang') || 'es';
+
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        const inlineTypes = el.tagName === 'SPAN' || el.tagName === 'I' || el.classList.contains('keywordsline');
+        el.style.display = el.dataset.lang === lang ? (inlineTypes ? 'inline' : 'block') : 'none';
+      });
+      localStorage.setItem('lang', lang);
+      langToggle.textContent = lang === 'es' ? '🌐 English' : '🌐 Español';
+      document.documentElement.lang = lang;
+    }
+
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'es' ? 'en' : 'es';
+      switchLanguage(currentLang);
+    });
+
+    switchLanguage(currentLang);
+
+    // Scrollspy (highlight active link)
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          navLinks.forEach(link=>link.classList.remove('active'));
+          const id = entry.target.getAttribute('id');
+          const activeLink = document.querySelector('.nav-links a[href="#'+id+'"]');
+          if(activeLink){ activeLink.classList.add('active'); }
+        }
+      });
+    }, {rootMargin: "-45% 0px -50% 0px", threshold: 0.01});
+    sections.forEach(sec=>observer.observe(sec));
+  </script>
+</body>
+</html>
