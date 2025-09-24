@@ -177,39 +177,45 @@ img{max-width:100%;display:block}
 .about-card .contact-list {
   list-style: none;
   padding: 0;
-  margin: 16px auto 0;
+  margin: 20px auto 0;
   display: flex;
   flex-direction: column;
   gap: 14px;
-  align-items: center; /* centra todo */
+  align-items: center;
 }
 
 .about-card .contact-list li {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: center;        /* centra verticalmente ícono + texto */
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
+  max-width: 260px;           /* ancho fijo para alinear todos */
   font-size: 1rem;
   color: var(--fg);
 }
 
 .about-card .contact-list .icon {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;             /* mantiene mismo tamaño siempre */
   border-radius: 50%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(135deg, var(--primary), var(--primary-2));
   color: #fff;
-  font-size: 16px;
-  flex-shrink: 0; /* evita que se deforme */
+  font-size: 18px;
 }
 
 .about-card .contact-list a {
-  color: var(--primary);
-  font-weight: 600;
+  color: var(--fg);
+  font-weight: 500;
+  text-decoration: none;
   transition: color 0.2s;
 }
 
 .about-card .contact-list a:hover {
   color: var(--accent);
 }
+
