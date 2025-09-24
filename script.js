@@ -173,6 +173,12 @@ menuToggle.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
+  document.querySelectorAll(".nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+});
+
 // inicializar tema guardado o por defecto
 const savedTheme = localStorage.getItem("theme") || "light";
 setTheme(savedTheme);
