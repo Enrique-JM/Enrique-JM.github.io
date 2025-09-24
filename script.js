@@ -164,6 +164,14 @@ themeToggle.addEventListener("click", () => {
   const newTheme = body.classList.contains("dark") ? "light" : "dark";
   setTheme(newTheme);
 });
+  
+// === MENU RESPONSIVO ===
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
 
 // inicializar tema guardado o por defecto
 const savedTheme = localStorage.getItem("theme") || "light";
