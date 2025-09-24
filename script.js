@@ -149,40 +149,23 @@ const translations = {
 window.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
   const themeToggle = document.getElementById("themeToggle");
-  const langToggle = document.getElementById("langToggle");
-  let currentLang = localStorage.getItem("lang") || "es";
 
-  // === TEMA CLARO/OSCURO ===
-function setTheme(theme) {
-  body.classList.remove("light", "dark");
-  body.classList.add(theme);
-  localStorage.setItem("theme", theme);
-  themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
-}
+  function setTheme(theme) {
+    body.classList.remove("light", "dark");
+    body.classList.add(theme);
+    localStorage.setItem("theme", theme);
+    themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
+  }
 
-themeToggle.addEventListener("click", () => {
-  const newTheme = body.classList.contains("dark") ? "light" : "dark";
-  setTheme(newTheme);
-});
-  
-// === MENU RESPONSIVO ===
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
-
-menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("active");
-});
-
-document.querySelectorAll(".nav a").forEach(link => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("active");
+  themeToggle.addEventListener("click", () => {
+    const newTheme = body.classList.contains("dark") ? "light" : "dark";
+    setTheme(newTheme);
   });
+
+  // Inicializar con tema guardado o light por defecto
+  const savedTheme = localStorage.getItem("theme") || "light";
+  setTheme(savedTheme);
 });
-
-// inicializar tema guardado o por defecto
-const savedTheme = localStorage.getItem("theme") || "light";
-setTheme(savedTheme);
-
 
   // === IDIOMA ===
   function setLang(lang) {
