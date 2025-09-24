@@ -102,7 +102,7 @@ const translations = {
       "Mis habilidades me permiten no solo desarrollar modelos predictivos, sino traducirlos en estrategias claras y aplicables para instituciones públicas y empresas privadas, generando impacto en áreas como logística, análisis poblacional y gestión de riesgos.",
     about_badge:
       "Integro ciencia de datos y criminología para ofrecer un análisis único que combina técnica y estrategia, ayudando a las empresas a tomar decisiones más inteligentes.",
-    value_title: "🎯 Mi propuesta de valor",
+    value_title: "Propuesta de valor",
     value_intro:
       "Soy un profesional único en el cruce entre ciencia de datos y criminología, capaz de traducir patrones complejos en estrategias accionables que impactan tanto en el sector público como en el privado.",
     value_1_t: "Análisis estratégico",
