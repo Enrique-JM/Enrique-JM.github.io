@@ -131,14 +131,15 @@ img{max-width:100%;display:block}
     display: none;
     flex-direction: column;
     background: var(--bg);
-    position: absolute;
+    position: fixed; /* antes estaba absolute */
     top: 60px;
     right: 10px;
-    width: 200px;
-    padding: 10px;
+    width: 220px;
+    padding: 12px;
     border: 1px solid var(--border);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 999; /* asegura que quede encima */
   }
 
   .nav.active {
@@ -153,4 +154,5 @@ img{max-width:100%;display:block}
     justify-content: space-between;
   }
 }
+
 
