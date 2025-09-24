@@ -169,10 +169,30 @@ img { max-width: 100%; display: block; }
 /* FOOTER */
 .site-footer { text-align: center; padding: 20px; color: var(--muted); }
 
-/* === NAVBAR RESPONSIVA === */
+/* Ocultar por defecto (pantallas grandes) */
+.menu-toggle {
+  display: none;
+}
+
+/* Mostrar SOLO en móviles */
 @media (max-width: 900px) {
   .menu-toggle {
     display: block;
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative; /* lo mantienes alineado dentro del header */
+    top: auto;
+    right: auto;
+    width: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .nav {
+    display: none;
     flex-direction: column;
     background: var(--bg);
     position: absolute;
@@ -188,15 +208,6 @@ img { max-width: 100%; display: block; }
 
   .nav.active {
     display: flex;
-  }
-
-  .menu-toggle {
-    display: none;
-    background: transparent;
-    border: none;
-    font-size: 1.6rem;
-    cursor: pointer;
-    margin-left: 10px;
   }
 
   .topbar {
