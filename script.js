@@ -16,6 +16,7 @@ themeToggle.addEventListener("click", () => {
 const langToggle = document.getElementById("langToggle");
 let currentLang = localStorage.getItem("lang") || "es";
 
+// === TRADUCCIONES ===
 const translations = {
   en: {
     banner_title: "I connect advanced analytics with real-world challenges",
@@ -144,30 +145,44 @@ const translations = {
   }
 };
 
-function setLang(lang) {
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    if (translations[lang] && translations[lang][key]) {
-      el.innerHTML = translations[lang][key]; // permite span .accent
-    }
-  });
-  localStorage.setItem("lang", lang);
-  currentLang = lang;
-  langToggle.textContent = lang === "es" ? "🌐 ES" : "🌐 EN";
-}
-
-langToggle.addEventListener("click", () => {
-  const newLang = currentLang === "es" ? "en" : "es";
-  setLang(newLang);
-});
-
-
-// Footer año
-document.getElementById("year")?.textContent = new Date().getFullYear();
-// iniciar con preferencia guardada al cargar la página
+// === INICIALIZACIÓN DE BOTONES ===
 window.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("theme") || "light";
-  setTheme(savedTheme);   // inicializa botón claro/oscuro
-  setLang(currentLang);   // inicializa botón ES/EN
-});
+  const body = document.body;
+  const themeToggle = document.getElementById("themeToggle");
+  const langToggle = document.getElementById("langToggle");
+  let currentLang = localStorage.getItem("lang") || "es";
 
+  // === TEMA CLARO/OSCURO ===
+  function setTheme(theme) {
+    body.classList.remove("light", "dark");
+    body.classList.add(theme);
+    localStorage.setItem("theme", theme);
+    themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
+  }
+  themeToggle.addEventListener("click", () => {
+    setTheme(body.classList.contains("dark") ? "light" : "dark");
+  });
+  const savedTheme = localStorage.getItem("theme") || "light";
+  setTheme(savedTheme);
+
+  // === IDIOMA ===
+  function setLang(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[lang] && translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+    localStorage.setItem("lang", lang);
+    currentLang = lang;
+    langToggle.textContent = lang === "es" ? "🌐 ES" : "🌐 EN";
+  }
+  langToggle.addEventListener("click", () => {
+    const newLang = currentLang === "es" ? "en" : "es";
+    setLang(newLang);
+  });
+  setLang(currentLang); // inicializar idioma guardado
+
+  // === FOOTER AÑO DINÁMICO ===
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
