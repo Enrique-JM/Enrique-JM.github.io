@@ -11,9 +11,6 @@ function setTheme(theme) {
 themeToggle.addEventListener("click", () => {
   setTheme(body.classList.contains("dark") ? "light" : "dark");
 });
-window.addEventListener("DOMContentLoaded", () => {
-
-});
 
 // === IDIOMA ES/EN (bidireccional, persistente) ===
 const langToggle = document.getElementById("langToggle");
@@ -164,10 +161,6 @@ langToggle.addEventListener("click", () => {
   setLang(newLang);
 });
 
-// iniciar con preferencia guardada y actualizar botón
-window.addEventListener("DOMContentLoaded", () => {
-  
-});
 
 // Footer año
 document.getElementById("year")?.textContent = new Date().getFullYear();
