@@ -40,7 +40,7 @@ const translations = {
       "I not only build predictive models, I translate them into clear strategies for public institutions and private companies—impacting logistics, population analysis and risk management.",
     about_badge:
       "I integrate data science and criminology to deliver unique analysis that blends technique and strategy, helping companies make smarter decisions.",
-    value_title: "🎯 My value proposition",
+    value_title: "Value proposition",
     value_intro:
       "A unique profile at the intersection of data science and criminology, translating complex patterns into actionable strategies for public and private sectors.",
     value_1_t: "Strategic analysis",
