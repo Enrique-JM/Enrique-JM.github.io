@@ -12,8 +12,7 @@ themeToggle.addEventListener("click", () => {
   setTheme(body.classList.contains("dark") ? "light" : "dark");
 });
 window.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("theme") || "light";
-  setTheme(savedTheme);
+
 });
 
 // === IDIOMA ES/EN (bidireccional, persistente) ===
@@ -167,8 +166,15 @@ langToggle.addEventListener("click", () => {
 
 // iniciar con preferencia guardada y actualizar botón
 window.addEventListener("DOMContentLoaded", () => {
-  setLang(currentLang);
+  
 });
 
 // Footer año
 document.getElementById("year")?.textContent = new Date().getFullYear();
+// iniciar con preferencia guardada al cargar la página
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  setTheme(savedTheme);   // inicializa botón claro/oscuro
+  setLang(currentLang);   // inicializa botón ES/EN
+});
+
