@@ -24,10 +24,10 @@ const translations = {
     nav_value: "Value",
     nav_experience: "Experience",
     nav_education: "Education",
-    nav_projects: "Portfolio",
+    nav_projects: "Porojects",
     nav_skills: "Skills",
     nav_contact: "Contact",
-    cta_portfolio: "View Portfolio",
+    cta_portfolio: "View Projects",
     cta_contact: "Contact",
     cta_cv: "Download CV",
     about_kws:
@@ -65,7 +65,7 @@ const translations = {
     edu_ds: "Data Science — Bootcamp",
     edu_extra: "Additional Training",
     edu_extra_desc: "Geointelligence (CentroGeo), INEGI, ENALLT-UNAM.",
-    proj_title: "Portfolio",
+    proj_title: "Projects",
     proj_megaline_desc:
       "Classification model (>0.75) to recommend mobile plans.",
     proj_beta_desc: "Predictive churn model with F1 > 0.59.",
