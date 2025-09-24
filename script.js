@@ -11,8 +11,10 @@ function setTheme(theme) {
 themeToggle.addEventListener("click", () => {
   setTheme(body.classList.contains("dark") ? "light" : "dark");
 });
-const savedTheme = localStorage.getItem("theme") || "light";
-setTheme(savedTheme);
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  setTheme(savedTheme);
+});
 
 // === IDIOMA ES/EN (bidireccional, persistente) ===
 const langToggle = document.getElementById("langToggle");
@@ -163,8 +165,10 @@ langToggle.addEventListener("click", () => {
   setLang(newLang);
 });
 
-// iniciar con preferencia guardada
-setLang(currentLang);
+// iniciar con preferencia guardada y actualizar botón
+window.addEventListener("DOMContentLoaded", () => {
+  setLang(currentLang);
+});
 
 // Footer año
 document.getElementById("year")?.textContent = new Date().getFullYear();
