@@ -153,21 +153,22 @@ window.addEventListener("DOMContentLoaded", () => {
   let currentLang = localStorage.getItem("lang") || "es";
 
   // === TEMA CLARO/OSCURO ===
-  function setTheme(theme) {
-    body.classList.remove("light", "dark");
-    body.classList.add(theme);
-    localStorage.setItem("theme", theme);
-    themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
-  }
+function setTheme(theme) {
+  body.classList.remove("light", "dark");
+  body.classList.add(theme);
+  localStorage.setItem("theme", theme);
+  themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
+}
 
-  themeToggle.addEventListener("click", () => {
-    const newTheme = body.classList.contains("dark") ? "light" : "dark";
-    setTheme(newTheme);
-  });
+themeToggle.addEventListener("click", () => {
+  const newTheme = body.classList.contains("dark") ? "light" : "dark";
+  setTheme(newTheme);
+});
 
-  // inicializar tema guardado
-  const savedTheme = localStorage.getItem("theme") || "light";
-  setTheme(savedTheme);
+// inicializar tema guardado o por defecto
+const savedTheme = localStorage.getItem("theme") || "light";
+setTheme(savedTheme);
+
 
   // === IDIOMA ===
   function setLang(lang) {
