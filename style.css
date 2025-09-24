@@ -154,5 +154,26 @@ img{max-width:100%;display:block}
     justify-content: space-between;
   }
 }
+.contact-list.centered {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.contact-list.centered li {
+  margin: 10px 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* espacio entre icono y texto */
+}
+
+.contact-list.centered .icon {
+  font-size: 1.2rem;
+}
+
+
 
 
