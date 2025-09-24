@@ -180,3 +180,46 @@ body.dark .topbar {
 
 /* FOOTER */
 .site-footer { text-align: center; padding: 20px; color: var(--muted); }
+
+/* === BOTÓN HAMBURGUESA === */
+/* Ocultar por defecto (computadora) */
+.menu-toggle {
+  display: none;
+}
+
+/* Mostrar solo en móviles */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin-left: 10px;
+    color: var(--fg);
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: var(--bg);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 220px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.1);
+    z-index: 999;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .topbar {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
