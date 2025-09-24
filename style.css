@@ -115,3 +115,42 @@ img{max-width:100%;display:block}
 
 /* FOOTER */
 .site-footer{text-align:center;padding:20px;color:var(--muted)}
+
+/* === NAVBAR RESPONSIVA === */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: var(--bg);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .topbar {
+    justify-content: space-between;
+  }
+}
+
