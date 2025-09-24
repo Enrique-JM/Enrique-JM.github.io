@@ -11,7 +11,8 @@ function setTheme(theme) {
 themeToggle.addEventListener("click", () => {
   setTheme(body.classList.contains("dark") ? "light" : "dark");
 });
-setTheme(localStorage.getItem("theme") || "light");
+const savedTheme = localStorage.getItem("theme") || "light";
+setTheme(savedTheme);
 
 // === IDIOMA ES/EN (bidireccional, persistente) ===
 const langToggle = document.getElementById("langToggle");
