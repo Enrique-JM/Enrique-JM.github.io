@@ -199,12 +199,13 @@ body.dark .topbar {
     color: var(--fg);
   }
 
+  /* Cambiar nav: oculto por defecto en móvil */
   .nav {
-    display: none;
+    display: none !important;
     flex-direction: column;
     background: var(--bg);
     position: absolute;
-    top: 60px;
+    top: 60px;  /* justo debajo del header */
     right: 10px;
     width: 220px;
     padding: 12px;
@@ -215,11 +216,11 @@ body.dark .topbar {
   }
 
   .nav.active {
-    display: flex;
+    display: flex !important;
   }
 
   .topbar {
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
+
