@@ -173,6 +173,41 @@ img{max-width:100%;display:block}
 .contact-list.centered .icon {
   font-size: 1.2rem;
 }
+/* ====== Contacto en la tarjeta lateral (alineación perfecta) ====== */
+.about-card .contact-list {
+  padding: 0;
+  margin: 12px auto 0;
+  max-width: 360px;          /* ancho fijo para centrar visualmente */
+  list-style: none;
+  text-align: center;        /* anula el left del estilo global */
+}
+
+.about-card .contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* centra ícono + texto como bloque */
+  gap: 12px;
+  margin: 10px 0;
+}
+
+/* Tamaño y estilo SOLO para los íconos dentro de la tarjeta */
+.about-card .contact-list .icon {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;            /* ancho fijo para alinear todas las filas */
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+}
+
+/* Asegura que los enlaces no desalineen el texto */
+.about-card .contact-list a {
+  display: inline-block;
+}
 
 
 
