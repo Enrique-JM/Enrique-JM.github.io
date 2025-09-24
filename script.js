@@ -159,9 +159,13 @@ window.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", theme);
     themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
   }
+
   themeToggle.addEventListener("click", () => {
-    setTheme(body.classList.contains("dark") ? "light" : "dark");
+    const newTheme = body.classList.contains("dark") ? "light" : "dark";
+    setTheme(newTheme);
   });
+
+  // inicializar tema guardado
   const savedTheme = localStorage.getItem("theme") || "light";
   setTheme(savedTheme);
 
@@ -177,11 +181,13 @@ window.addEventListener("DOMContentLoaded", () => {
     currentLang = lang;
     langToggle.textContent = lang === "es" ? "🌐 ES" : "🌐 EN";
   }
+
   langToggle.addEventListener("click", () => {
     const newLang = currentLang === "es" ? "en" : "es";
     setLang(newLang);
   });
-  setLang(currentLang); // inicializar idioma guardado
+
+  setLang(currentLang);
 
   // === FOOTER AÑO DINÁMICO ===
   document.getElementById("year").textContent = new Date().getFullYear();
