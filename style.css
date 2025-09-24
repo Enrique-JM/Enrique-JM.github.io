@@ -171,8 +171,8 @@ img { max-width: 100%; display: block; }
 
 /* === NAVBAR RESPONSIVA === */
 @media (max-width: 900px) {
-  .nav {
-    display: none;
+  .menu-toggle {
+    display: block;
     flex-direction: column;
     background: var(--bg);
     position: absolute;
@@ -191,7 +191,7 @@ img { max-width: 100%; display: block; }
   }
 
   .menu-toggle {
-    display: block;
+    display: none;
     background: transparent;
     border: none;
     font-size: 1.6rem;
