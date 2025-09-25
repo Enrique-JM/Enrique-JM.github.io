@@ -115,7 +115,7 @@ const translations = {
     value_3_d:
       "No solo desarrollo modelos, integro contexto social y criminológico en la toma de decisiones.",
     value_cta:
-      "Abierto a consultoría, gobierno y logística avanzada, donde los datos generen soluciones de alto impacto.",
+      "Porque los datos solo importan cuando se convierten en decisiones que transforman realidades.",
     exp_title: "Experiencia",
     exp_assist_title: "Asistente de Investigación",
     exp_assist_desc:
