@@ -53,7 +53,7 @@ const translations = {
     value_3_d:
       "Beyond models, I incorporate social and criminological context into decision-making.",
     value_cta:
-      "Open to consulting, government and advanced logistics projects where data drives high-impact solutions.",
+      "Because data only matters when it turns into decisions that transform realities.",
     exp_title: "Experience",
     exp_assist_title: "Research Assistant",
     exp_assist_desc:
